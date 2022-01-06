@@ -1,0 +1,11 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.min.css";
+
+/*HOMEPAGE*/
+
+.homepage-container{
+    background-image: url("assets/image3.jpeg");
+    background-size: contain;
+    height: 70vh;
+    background-repeat: no-repeat;
+}
