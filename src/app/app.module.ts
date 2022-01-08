@@ -17,6 +17,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatInputModule } from '@angular/material/input';
+import { MatSidenavModule } from '@angular/material/sidenav'
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FrequentlyAskedQuestionsComponent } from './frequently-asked-questions/frequently-asked-questions.component';
 import { CustomOrderComponent } from './custom-order/custom-order.component';
@@ -45,6 +46,7 @@ import { CustomOrderComponent } from './custom-order/custom-order.component';
     MatFormFieldModule,
     MatInputModule,
     MatMenuModule,
+    MatSidenavModule,
     FlexLayoutModule
   ],
   providers: [],
