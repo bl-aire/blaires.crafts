@@ -1,0 +1,64 @@
+.homepage-container{
+    background: url('/assets/white-black.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 80vh;
+}
+
+#intro{
+    border-radius: 50%;
+    background-color: white;
+    height: 22em;
+    width: 22em;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn ease 2s; 
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.intro-outline {
+    background-color:#ffffff;
+    height:18em;
+    width:18em;
+    border: 3px solid #ffc0cb;
+    border-radius: 50%;
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item{
+    padding: 0.8em;
+}
+
+.title {
+    color: #ffc0cb;
+    font-size: 2.5em;
+    font-family:'Comforter Brush', cursive;;
+}
+
+.item2, .item3 a {
+    font-family:'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+.item3 a{
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    color: black;
+}

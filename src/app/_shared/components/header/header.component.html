@@ -1,0 +1,30 @@
+
+<mat-toolbar color="primary" class="toolbar">
+
+    <button mat-button routerLink="/homepage" routerLinkActive="active" class="logo"><img src="/assets/Blaireee.png" height="125px" alt="logo"></button>
+    <!--<button mat-button routerLink="/homepage" routerLinkActive="active"><mat-icon><img src="assets/blaire's craft.png" alt="logo" height="80px"></mat-icon></button>-->
+  
+    <span class="fill-remaining-space"></span>
+    
+    <div fxLayout="row" fxShow="false" fxShow.gt-sm>
+      <button mat-button routerLink="/homepage" routerLinkActive="active">Home</button>
+      <button mat-button routerLink="/aboutpage" routerLinkActive="active">About Us</button>
+      <button mat-button routerLink="/products" routerLinkActive="active">Products</button>
+      <button mat-button routerLink="/customorder" routerLinkActive="active">Custom Order</button>
+      <button mat-button routerLink="/FAQs" routerLinkActive="active">FAQs</button>
+      <button mat-button routerLink="/contact" routerLinkActive="active">Contact Us</button>
+    </div>
+    <button mat-button [mat-menu-trigger-for]="menu" fxHide="false" fxHide.gt-sm>
+      <mat-icon>menu</mat-icon>
+    </button>
+  </mat-toolbar>
+  <mat-menu x-position="before" #menu="matMenu">
+    <button mat-menu-item routerLink="/homepage">Home</button>
+    <button mat-menu-item routerLink="/aboutpage">About Us</button>
+    <button mat-menu-item routerLink="/products">Products</button>
+    <button mat-menu-item routerLink="/customorder">Custom Order</button>
+    <button mat-menu-item routerLink="/FAQs">FAQs</button>
+    <button mat-menu-item routerLink="/contact">Contact Us</button>
+  </mat-menu>
+  
+  <router-outlet></router-outlet>

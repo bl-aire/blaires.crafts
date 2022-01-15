@@ -1,0 +1,13 @@
+.fill-remaining-space {
+   flex: 1 1 auto;
+ }
+
+.mat-toolbar.mat-primary {
+  background: #fff;
+  color :#000;
+}
+
+.logo {
+  font-family: 'The Nautigal', cursive;
+  font-size: 1.2em;
+}
