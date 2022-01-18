@@ -30,3 +30,13 @@
   .example-sidenav{
     padding: 20px;
   }
+
+  .catalog {
+    margin-top: 2em;
+  }
+
+ @media screen and (max-width: 600px) {
+   .category {
+     display: none;
+   }
+ }

@@ -1,0 +1,106 @@
+[
+    {
+      "productId": 1,
+      "productName": "Teddy-bear Mug",
+      "productCode": "GDN-0011",
+      "description": "Handmade Teddy-bear Mug.",
+      "price": 20.00,
+      "imageUrl": "assets/roses.jpeg"
+    },
+    {
+      "productId": 2,
+      "productName": "Spongebob Mug",
+      "productCode": "GDN-0011",
+      "description": "Handmade Spongebob Mug.",
+      "price": 20.00,
+      "imageUrl": "assets/spongebob.jpeg"
+    },
+    {
+      "productId": 3,
+      "productName": "Rose Mug",
+      "productCode": "GDN-0011",
+      "description": "Handmade Rose Mug.",
+      "price": 20.00,
+      "imageUrl": "assets/rosee.jpeg"
+    },
+    {
+      "productId": 4,
+      "productName": "Rose Studs",
+      "productCode": "GDN-0011",
+      "description": "Handmade Rose Studs.",
+      "price": 20.00,
+      "imageUrl": "assets/image5.jpeg"
+    },
+    {
+      "productId": 5,
+      "productName": "Rose Studs",
+      "productCode": "GDN-0011",
+      "description": "Handmade Rose Studs.",
+      "price": 20.00,
+      "imageUrl": "assets/flowers.jpeg"
+    },
+    {
+      "productId": 6,
+      "productName": "Rose Studs",
+      "productCode": "GDN-0011",
+      "description": "Handmade Rose Studs.",
+      "price": 20.00,
+      "imageUrl": "assets/teddy.jpeg"
+    },
+    {
+      "productId": 7,
+      "productName": "Rose Studs",
+      "productCode": "GDN-0011",
+      "description": "Handmade Rose Studs.",
+      "price": 20.00,
+      "imageUrl": "assets/minion.jpeg"
+    },
+    {
+      "productId": 8,
+      "productName": "Rose Studs",
+      "productCode": "GDN-0011",
+      "description": "Handmade Rose Studs.",
+      "price": 20.00,
+      "imageUrl": "assets/little-mermaid.jpeg"
+    },
+    {
+      "productId": 9,
+      "productName": "Rose Studs",
+      "productCode": "GDN-0011",
+      "description": "Handmade Rose Studs.",
+      "price": 20.00,
+      "imageUrl": "assets/olaf.png"
+    },
+    {
+      "productId": 10,
+      "productName": "Rose Studs",
+      "productCode": "GDN-0011",
+      "description": "Handmade Rose Studs.",
+      "price": 20.00,
+      "imageUrl": "assets/taurus.jpeg"
+    },
+    {
+      "productId": 11,
+      "productName": "Rose Studs",
+      "productCode": "GDN-0011",
+      "description": "Handmade Rose Studs.",
+      "price": 20.00,
+      "imageUrl": "assets/mandaloriann.jpeg"
+    },
+    {
+      "productId": 12,
+      "productName": "Rose Studs",
+      "productCode": "GDN-0011",
+      "description": "Handmade Rose Studs.",
+      "price": 20.00,
+      "imageUrl": "assets/teddy-box.jpeg"
+    },
+    {
+      "productId": 12,
+      "productName": "Rose Studs",
+      "productCode": "GDN-0011",
+      "description": "Handmade Rose Studs.",
+      "price": 20.00,
+      "imageUrl": "assets/burger.jpeg"
+    }
+  ]
