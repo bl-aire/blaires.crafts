@@ -1,4 +1,13 @@
-<div class="homepage-container  row" id="homepage-container">
+<div class="homepage-container" id="homepage-container">
+    <div class="homepage-intro">
+        <div class="title">Custom gifts</div>
+        <div class="subtitle">The piece you love is a click away!</div>
+        <div class="button">
+            <a routerLink="/products" routerLinkActive="active">SHOP</a>
+        </div>
+    </div>
+    
+
     <!--<div class="col-xs-12 col-md-6 col-lg-5">
         <h2>Hey there!</h2>
         <p>
@@ -9,14 +18,16 @@
         </p>
     </div>
     <img src="assets/paint.jpg" alt="" class="img-fluid" class="col-xs-12 col-md-6 col-lg-7">-->
-    <div id="intro">
+
+    <!--<div id="intro">
         <div class="intro-outline">
             <div class="item title">Custom gifts</div>
             <div class="item item2">The piece you love is a click away!</div>
             <div class="item item3">
-                <a href="">SHOP</a>
+                <a routerLink="/products" routerLinkActive="active">SHOP</a>
             </div>
         </div>
-    </div>
+    </div>-->
 </div>
 
+<router-outlet></router-outlet>

@@ -1,6 +1,26 @@
-footer{
-    position: fixed;
+.mat-toolbar.mat-primary {
+    background: #fff;
+    color :#000;
     bottom: 0px;
-    background-color: #ffe4c4;
+    position: fixed;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .mat-toolbar ul {
+    display: flex;
+}
+
+footer .mat-toolbar ul li {
+    padding:0 1.3em 0 0;
+    list-style-type: none;
+    font-size: medium;
+    /*align-self: center;*/
+}
+
+footer .mat-toolbar ul li a {
+    color: #000000;
+    font-size: 1.5em;
 }

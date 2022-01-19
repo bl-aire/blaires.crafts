@@ -8,6 +8,7 @@ import { ProductService } from "./product.service";
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css']
 })
+
 export class ProductsComponent implements OnInit {
   pageTitle: string = 'Product List';
   imageWidth: number = 200;
@@ -51,7 +52,6 @@ export class ProductsComponent implements OnInit {
     //this.listFilter = 'cart';
   }
 
-  
   ngOnDestroy(){
     this.sub.unsubscribe();
   }

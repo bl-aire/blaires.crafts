@@ -77,7 +77,7 @@
       "productCode": "GDN-0011",
       "description": "Handmade Rose Studs.",
       "price": 20.00,
-      "imageUrl": "assets/taurus.jpeg"
+      "imageUrl": "assets/bob.jpeg"
     },
     {
       "productId": 11,
@@ -102,5 +102,13 @@
       "description": "Handmade Rose Studs.",
       "price": 20.00,
       "imageUrl": "assets/burger.jpeg"
+    },
+    {
+      "productId": 12,
+      "productName": "Rose Studs",
+      "productCode": "GDN-0011",
+      "description": "Handmade Rose Studs.",
+      "price": 20.00,
+      "imageUrl": "assets/icecream-donut.jpeg"
     }
   ]
