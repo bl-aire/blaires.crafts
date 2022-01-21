@@ -1,0 +1,38 @@
+.container {
+    background-color: rgb(255, 168, 183);
+    height: 35%;
+    padding: 2em 4em;
+}
+
+/*.about-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}*/
+
+.container h2 {
+    /*text-align: center;*/
+    font-family:'Comforter Brush', cursive;
+    font-size: 3em;
+    font-weight: 400;
+}
+
+img {
+    width: 100%;
+    margin: 1em 0 2em;
+}
+
+.bee {
+    font-size: 3em;
+    font-family:'Comforter Brush', cursive;
+}
+
+@media screen and (min-width: 769px) {
+    .about-main {
+      padding: 0 3em;
+    }
+    .container {
+        height: 50%;
+    }
+}

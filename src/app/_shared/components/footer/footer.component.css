@@ -24,3 +24,7 @@ footer .mat-toolbar ul li a {
     color: #000000;
     font-size: 1.5em;
 }
+
+footer .mat-toolbar ul li a:hover {
+    color: rgb(255, 168, 183);
+}

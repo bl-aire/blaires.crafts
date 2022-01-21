@@ -11,3 +11,7 @@
   font-family: 'The Nautigal', cursive;
   font-size: 1.2em;
 }
+
+button:hover {
+  color: rgb(255, 168, 183);
+}

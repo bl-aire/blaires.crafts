@@ -46,6 +46,12 @@
     border-radius: 30px;
 }
 
+.button a:hover {
+    background-color: rgb(255, 168, 183);
+    border: none;
+    color: rgb(255, 255, 255);
+}
+
 /*.homepage-intro {
     background-color: rgba(255, 255, 255, 0.9);
     width:fit-content;
