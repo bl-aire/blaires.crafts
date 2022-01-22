@@ -9,10 +9,12 @@ My goal for this project is basically to prove to everyone(majorly, the voices i
 ## Tools
 
 The tools I used are:
--IDE: VS code
--JavaScript framework: Angular version 12.2.11
--Styling: Bootstap, Vanilla CSS and Angular material
--Version control: Git an GitHub
+
+|Tool|Description|
+|VS code|IDE|
+|Angular version 12.2.11|JavaScript framework|
+| Bootstap, Vanilla CSS and Angular material|Styling|
+|Git and GitHub|Version control|
 
 ## User Interface
 
