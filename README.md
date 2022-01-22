@@ -11,6 +11,7 @@ My goal for this project is basically to prove to everyone(majorly, the voices i
 The tools I used are:
 
 |Tool|Description|
+|---|---|
 |VS code|IDE|
 |Angular version 12.2.11|JavaScript framework|
 | Bootstap, Vanilla CSS and Angular material|Styling|
