@@ -1,27 +1,20 @@
-# BlaireCrafts
+# Blaire's Crafts
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.11.
+When I'm not coding, I make miniature art with polymer clay. Blaire's Crafts is my attempt to incorporate my sculpting and coding skills that I have developed over the years. It is an e-commerce site created with Angular framework with a user-interface that is responsive and scalable. 
 
-## Development server
+## Goal
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+My goal for this project is basically to prove to everyone(majorly, the voices in my head) that choosing to study daily since February, 2021 wasn't a mistake and that it's possible to achieve anything if we can only dare to dream and act.
 
-## Code scaffolding
+## Tools
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The tools I used are:
+-IDE: VS code
+-JavaScript framework: Angular version 12.2.11
+-Styling: Bootstap, Vanilla CSS and Angular material
+-Version control: Git an GitHub
 
-## Build
+## User Interface
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+*In the works*
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
