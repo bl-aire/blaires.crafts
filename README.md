@@ -14,7 +14,7 @@ The tools I used are:
 |---|---|
 |VS code|IDE|
 |Angular version 12.2.11|JavaScript framework|
-| Bootstap, Vanilla CSS and Angular material|Styling|
+| Bootstrap, Vanilla CSS and Angular material|Styling|
 |Git and GitHub|Version control|
 
 ## User Interface
