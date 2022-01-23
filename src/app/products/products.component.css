@@ -1,5 +1,7 @@
 .container {
   padding: 2em 4em;
+  min-height: 100%;
+  width: 100%;
 }
 
 .img {
@@ -17,13 +19,39 @@ h2 {
   margin-bottom: 2%;
 }
 
-.container {
-  min-height: 100%;
+.search-form {
   width: 100%;
 }
 
-.search-form {
-  width: 90%;
+.input {
+  width: 80%;
+}
+
+.button {
+  width: 15%;
+  margin-left: 5%;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
+.button:hover {
+  background-color: rgb(255, 168, 183);
+  border: none;
+  color: rgb(255, 255, 255);
+}
+
+/*.m-card {
+  height: 4em;
+}*/
+
+.price {
+  font-size: 1.1em;
+}
+
+.cart {
+  font-size: 1.5em;
 }
 
 .example-container{
@@ -50,5 +78,15 @@ h2 {
 @media screen and (max-width: 600px) {
   .category {
     display: none;
+  }
+
+  .input {
+    width: 70%;
+  }
+  
+  .button {
+    width: 25%;
+    margin-left: 5%;
+    border-radius: 30px;
   }
 }

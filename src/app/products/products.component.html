@@ -2,8 +2,8 @@
   <h2>{{ pageTitle }}</h2>
 
   <mat-form-field class="search-form">
-    <input matInput placeholder="Search Picture" type="text">
-    <button button="submit" mat-raised-button color="primary">Search</button>
+    <input matInput placeholder="Search Picture" type="text" class="input">
+    <button button="submit" mat-raised-button color="primary" class="button">Search</button>
     <!--[(ngModel)] = 'listFilter'-->
   </mat-form-field>
 
@@ -26,42 +26,19 @@
     <div fxLayout="row wrap" fxLayout.md="column" fxLayoutWrap="wrap" fxLayoutGap="32px" fxLayoutAlign="center">
       <mat-card class="m-card" *ngFor='let product of filteredProducts' class="catalog" fxFlex="25" fxFlex.lt-md="60"
         fxFlex.xs="60">
+
         <mat-card-header fxLayout.gt-xs="row" fxLayout.xs="column">
-          <div mat-card-avatar class="m-header-image"></div>
           <mat-card-title>{{product.productName}}</mat-card-title>
           <mat-card-subtitle>{{ product.description }}</mat-card-subtitle>
         </mat-card-header>
-        <img [src]='product.imageUrl' alt="" height="200px">
-        <mat-card-content>
-          <p>Hello there!</p>
-        </mat-card-content>
+
+        <img [src]='product.imageUrl' alt="" width="170px">
+    
         <mat-card-actions>
-          <button mat-button>{{ product.price }}</button>
-          <button mat-button>Add to cart</button>
+          <b class="price">{{ product.price | currency:'USD':'symbol':'1.2-2' }}</b>
+          <button mat-button><i class="fa fa-shopping-cart cart"></i></button>
         </mat-card-actions>
       </mat-card>
     </div>
-
-    <!--<div class="container mt-5"  *ngFor = 'let product of filteredProducts'>
-    <div class="row">
-      <div class="col-md-4">
-        <img width="175" height="175" [src] = 'product.imageUrl'>
-        <h2>{{product.productName}}</h2>
-        <p>{{ product.description }}</p>
-        <p><a class="btn btn-primary" href="applepie.html" role="button">View details</a></p>
-      </div>
-    </div>-->
   </mat-drawer-container>
-
-
-  <!--<div fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
-    <mat-card class="card-picture" *ngFor="let picture of pictures">
-      <mat-card-title fxLayout.gt-xs="row" fxLayout.xs="column">
-        <span fxFlex="80%">{{picture.title}}</span>
-        <mat-icon fxFlex="10%">mode_edit</mat-icon>
-        <mat-icon fxFlex="10%">delete</mat-icon>
-      </mat-card-title>
-      <img mat-card-image [src]="picture.img">
-    </mat-card>
-  </div>-->
 </div>
