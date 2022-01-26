@@ -1,87 +1,87 @@
 [
-    {
-      "productId": 1,
-      "productName": "Rose Mug",
-      "description": "Handmade Rose Mug",
-      "price": 20.00,
-      "imageUrl": "assets/roses.jpeg"
-    },
-    {
-      "productId": 2,
-      "productName": "Spongebob Mug",
-      "description": "Handmade Spongebob Mug",
-      "price": 20.00,
-      "imageUrl": "assets/spongebob.jpeg"
-    },
-    {
-      "productId": 3,
-      "productName": "Rose Mug",
-      "description": "Handmade Rose Mug",
-      "price": 20.00,
-      "imageUrl": "assets/rosee.jpeg"
-    },
-    {
-      "productId": 4,
-      "productName": "Flower Mug",
-      "description": "Handmade Flower Mug",
-      "price": 20.00,
-      "imageUrl": "assets/flowers.jpeg"
-    },
-    {
-      "productId": 6,
-      "productName": "Teddy Mug",
-      "description": "Handmade Teddy Mug",
-      "price": 20.00,
-      "imageUrl": "assets/teddy.jpeg"
-    },
-    {
-      "productId": 7,
-      "productName": "Minion Mug",
-      "description": "Handmade Minion Mug",
-      "price": 20.00,
-      "imageUrl": "assets/minion.jpeg"
-    },
-    {
-      "productId": 8,
-      "productName": "Flonda Mug",
-      "productCode": "GDN-0011",
-      "description": "Handmade Flonda Mug",
-      "price": 20.00,
-      "imageUrl": "assets/little-mermaid.jpeg"
-    },
-    {
-      "productId": 9,
-      "productName": "Olaf Mug",
-      "description": "Handmade Olaf Mug",
-      "price": 20.00,
-      "imageUrl": "assets/olaf.png"
-    },
-    {
-      "productId": 10,
-      "productName": "Spongebob Mug",
-      "description": "Handmade Spongebob Mug",
-      "price": 20.00,
-      "imageUrl": "assets/bob.jpeg"
-    },
-    {
-      "productId": 11,
-      "productName": "Teddy Giftbox",
-      "description": "Handmade Teddy Giftbox",
-      "price": 20.00,
-      "imageUrl": "assets/teddy-box.jpeg"
-    },
-    {
-      "productId": 12,
-      "productName": "Miniature Snacks",
-      "description": "Handmade Miniature Snacks",
-      "price": 20.00,
-      "imageUrl": "assets/burger.jpeg"
-    },
-    {
-      "productId": 13,
-      "productName": "Miniature Snacks",
-      "description": "Handmade Miniature Snacks",
-      "price": 20.00,
-      "imageUrl": "assets/icecream-donut.jpeg"
-    }
-  ]
+  {
+    "productId": 12,
+    "productName": "Miniature Snacks",
+    "description": "Handmade Miniature Snacks",
+    "price": 20.00,
+    "imageUrl": "assets/burger.jpeg"
+  },
+  {
+    "productId": 13,
+    "productName": "Miniature Snacks",
+    "description": "Handmade Miniature Snacks",
+    "price": 20.00,
+    "imageUrl": "assets/icecream-donut.jpeg"
+  },
+  {
+    "productId": 11,
+    "productName": "Teddy Giftbox",
+    "description": "Handmade Teddy Giftbox",
+    "price": 20.00,
+    "imageUrl": "assets/teddy-box.jpeg"
+  },
+  {
+    "productId": 1,
+    "productName": "Rose Mug",
+    "description": "Handmade Rose Mug",
+    "price": 20.00,
+    "imageUrl": "assets/roses.jpeg"
+  },
+  {
+    "productId": 2,
+    "productName": "Spongebob Mug",
+    "description": "Handmade Spongebob Mug",
+    "price": 20.00,
+    "imageUrl": "assets/spongebob.jpeg"
+  },
+  {
+    "productId": 3,
+    "productName": "Rose Mug",
+    "description": "Handmade Rose Mug",
+    "price": 20.00,
+    "imageUrl": "assets/rosee.jpeg"
+  },
+  {
+    "productId": 4,
+    "productName": "Flower Mug",
+    "description": "Handmade Flower Mug",
+    "price": 20.00,
+    "imageUrl": "assets/flowers.jpeg"
+  },
+  {
+    "productId": 6,
+    "productName": "Teddy Mug",
+    "description": "Handmade Teddy Mug",
+    "price": 20.00,
+    "imageUrl": "assets/teddy.jpeg"
+  },
+  {
+    "productId": 7,
+    "productName": "Minion Mug",
+    "description": "Handmade Minion Mug",
+    "price": 20.00,
+    "imageUrl": "assets/minion.jpeg"
+  },
+  {
+    "productId": 8,
+    "productName": "Flonda Mug",
+    "productCode": "GDN-0011",
+    "description": "Handmade Flonda Mug",
+    "price": 20.00,
+    "imageUrl": "assets/little-mermaid.jpeg"
+  },
+  {
+    "productId": 9,
+    "productName": "Olaf Mug",
+    "description": "Handmade Olaf Mug",
+    "price": 20.00,
+    "imageUrl": "assets/olaf.png"
+  },
+  {
+    "productId": 10,
+    "productName": "Spongebob Mug",
+    "description": "Handmade Spongebob Mug",
+    "price": 20.00,
+    "imageUrl": "assets/bob.jpeg"
+  }
+]
