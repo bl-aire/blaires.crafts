@@ -3,14 +3,6 @@
 
 /*HOMEPAGE*/
 
-/*.homepage-container {
-    margin: 2em 0;
-    background-image: url("assets/homepage.jpg");
-    background-size: contain;
-    height: 60vh;
-    background-repeat: no-repeat;
-}*/
-
 html, body { 
     height: 100%; 
     overflow-x: hidden;
