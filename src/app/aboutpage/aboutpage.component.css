@@ -4,12 +4,9 @@
     padding: 2em 4em;
 }
 
-/*.about-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}*/
+.about-main {
+    padding-bottom: 6em;
+}
 
 .container h2 {
     /*text-align: center;*/
@@ -34,5 +31,8 @@ img {
     }
     .container {
         height: 50%;
+    }
+    img {
+        height: 27em;
     }
 }

@@ -21,7 +21,6 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSidenavModule } from '@angular/material/sidenav'
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FrequentlyAskedQuestionsComponent } from './frequently-asked-questions/frequently-asked-questions.component';
-import { CustomOrderComponent } from './custom-order/custom-order.component';
 import { HeaderComponent } from './_shared/components/header/header.component';
 import { FooterComponent } from './_shared/components/footer/footer.component';
 
@@ -36,7 +35,6 @@ import { FooterComponent } from './_shared/components/footer/footer.component';
     PagenotfoundComponent,
     ContactComponent,
     FrequentlyAskedQuestionsComponent,
-    CustomOrderComponent,
     HeaderComponent,
     FooterComponent
   ],
