@@ -16,10 +16,10 @@
         <li><a href="#mugs">Mugs</a></li>
         <li><a href="#stationaries">Stationaries</a></li>
       </ul>
-      <p *ngIf=showFiller>Coming soon!</p>
+      <!--<p *ngIf=showFiller>Coming soon!</p>
       <button (click)="showFiller = !showFiller" mat-raised-button>
         Promo available
-      </button>
+      </button>-->
     </mat-drawer>
 
     <div class="m-sidenav-content">
@@ -41,7 +41,7 @@
     
         <div class ="mat-card-actions">
           <b class="price">{{ product.price | currency:'USD':'symbol':'1.2-2' }}</b>
-          <button mat-button><i class="fa fa-shopping-cart cart"></i></button>
+          <i class="fa fa-shopping-cart cart"></i><!--mat-button-->
         </div>
       </mat-card>
     </div>

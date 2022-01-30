@@ -57,15 +57,31 @@ mat-drawer ul li {
 }
 
 .price {
-  font-size: 1.1em;
+  font-size: 1.3em;
+  margin-right: 80%;
 }
 
 .cart {
   font-size: 1.5em;
+  border: none;
+  outline: none;
+  background-color: none;
 }
 
 .catalog {
   margin-top: 2em;
+}
+
+mat-drawer ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-family:'Comforter Brush', cursive;
+  font-size: 1.6em;
+  padding-right: 1em;
+}
+
+mat-drawer ul li a:hover {
+  color: rgb(255, 168, 183);
 }
 
 .m-sidenav-content button {
@@ -73,10 +89,6 @@ mat-drawer ul li {
   font-size: 2em;
   margin-top: 1em;
 }
-
-/*.m-sidenav-content button:hover{
-  translate: scale(1.2em);
-}*/
 
 @media screen and (max-width: 600px) {
   .category {
