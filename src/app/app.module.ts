@@ -23,6 +23,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { FrequentlyAskedQuestionsComponent } from './frequently-asked-questions/frequently-asked-questions.component';
 import { HeaderComponent } from './_shared/components/header/header.component';
 import { FooterComponent } from './_shared/components/footer/footer.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -36,7 +37,7 @@ import { FooterComponent } from './_shared/components/footer/footer.component';
     ContactComponent,
     FrequentlyAskedQuestionsComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,7 +52,9 @@ import { FooterComponent } from './_shared/components/footer/footer.component';
     MatInputModule,
     MatMenuModule,
     MatSidenavModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

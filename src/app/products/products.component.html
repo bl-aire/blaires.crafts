@@ -2,9 +2,8 @@
   <h2>{{ pageTitle }}</h2>
 
   <mat-form-field class="search-form">
-    <input matInput placeholder="Search Picture" type="text" class="input">
-    <button button="submit" mat-raised-button color="primary" class="button">Search</button>
-    <!--[(ngModel)] = 'listFilter'-->
+    <input matInput placeholder="Search Picture" class="input" type="search" [(ngModel)] = listFilter>
+    <!--<button button="submit" mat-raised-button color="primary" class="button">Search</button>-->
   </mat-form-field>
 
 
@@ -29,7 +28,7 @@
     </div>
 
     <div fxLayout="row wrap" fxLayout.md="column" fxLayoutWrap="wrap" fxLayoutGap="32px" fxLayoutAlign="center" class="div">
-      <mat-card class="m-card" *ngFor='let product of filteredProducts' class="catalog" fxFlex="25" fxFlex.lt-md="60"
+      <mat-card class="m-card" *ngFor="let product of filteredProducts" class="catalog" fxFlex="25" fxFlex.lt-md="60"
         fxFlex.xs="60">
 
         <mat-card-header fxLayout.gt-xs="row" fxLayout.xs="column">

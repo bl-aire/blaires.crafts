@@ -9,7 +9,7 @@ import { ProductService } from "./product.service";
   styleUrls: ['./products.component.css']
 })
 
-export class ProductsComponent implements OnInit {
+export class ProductsComponent implements OnInit, OnDestroy{
   pageTitle: string = 'Product List';
   imageWidth: number = 200;
   imageMargin: number = 20;

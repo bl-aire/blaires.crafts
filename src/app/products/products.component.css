@@ -18,14 +18,15 @@ h2 {
 }
 
 .search-form {
-  width: 100%;
+  width: 100vw;
 }
 
 .input {
-  width: 80%;
+  border: 1px solid black;
+  width: 100%;
 }
 
-.button {
+/*.button {
   width: 15%;
   margin-left: 5%;
   background-color: rgb(255, 255, 255);
@@ -38,7 +39,7 @@ h2 {
   background-color: rgb(255, 168, 183);
   border: none;
   color: rgb(255, 255, 255);
-}
+}*/
 
 mat-card, .div {
   display: flex;
