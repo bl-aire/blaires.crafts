@@ -18,28 +18,14 @@ h2 {
 }
 
 .search-form {
-  width: 100vw;
-}
-
-.input {
-  border: 1px solid black;
   width: 100%;
 }
 
-/*.button {
-  width: 15%;
-  margin-left: 5%;
-  background-color: rgb(255, 255, 255);
-  color: black;
-  border: 1px solid black;
-  border-radius: 30px;
+.input {
+  padding: 0.5em;
+  width: 100%;
 }
 
-.button:hover {
-  background-color: rgb(255, 168, 183);
-  border: none;
-  color: rgb(255, 255, 255);
-}*/
 
 mat-card, .div {
   display: flex;
@@ -95,14 +81,5 @@ mat-drawer ul li a:hover {
   .category {
     display: none;
   }
-
-  .input {
-    width: 70%;
-  }
   
-  .button {
-    width: 25%;
-    margin-left: 5%;
-    border-radius: 30px;
-  }
 }

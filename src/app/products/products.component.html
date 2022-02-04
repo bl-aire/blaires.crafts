@@ -2,8 +2,7 @@
   <h2>{{ pageTitle }}</h2>
 
   <mat-form-field class="search-form">
-    <input matInput placeholder="Search Picture" class="input" type="search" [(ngModel)] = listFilter>
-    <!--<button button="submit" mat-raised-button color="primary" class="button">Search</button>-->
+    <input matInput placeholder="Search Items" class="input" type="search" [(ngModel)] = listFilter>
   </mat-form-field>
 
 
@@ -40,7 +39,7 @@
     
         <div class ="mat-card-actions">
           <b class="price">{{ product.price | currency:'USD':'symbol':'1.2-2' }}</b>
-          <i class="fa fa-shopping-cart cart"></i><!--mat-button-->
+          <i class="fa fa-shopping-cart cart"></i>
         </div>
       </mat-card>
     </div>
