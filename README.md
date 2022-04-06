@@ -17,6 +17,10 @@ The tools I used are:
 | Bootstrap, Vanilla CSS and Angular material|Styling|
 |Git and GitHub|Version control|
 
+##URL
+
+<a href="https://github.com/bl-aire/blaires.crafts" target="_blank">https://github.com/bl-aire/blaires.crafts<a/>
+
 ## User Interface
 
 This project is still in progress but here's my progress so far with the Home, About, Product, FAQ and Contact pages:
