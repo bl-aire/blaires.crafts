@@ -17,7 +17,21 @@ The tools I used are:
 | Bootstrap, Vanilla CSS and Angular material|Styling|
 |Git and GitHub|Version control|
 
+## URL
+
+<!--<a href="https://bl-aire.github.io/blaires.crafts/homepage" target="_blank">https://bl-aire.github.io/blaires.crafts/homepage<a/>-->
+
 ## User Interface
 
-*In progress*
+This project is still in progress but here's my progress so far with the Home, About, Product, FAQ and Contact pages:
+
+![home](https://user-images.githubusercontent.com/84882370/162036002-edca295d-53a8-4e7e-9c08-f64ca2ee2638.PNG)
+
+![about](https://user-images.githubusercontent.com/84882370/162036206-2eafbf5b-005d-4485-ae55-907f89db5cd4.PNG)
+
+![products](https://user-images.githubusercontent.com/84882370/162036324-6a82014f-1456-4161-a8a4-8ca7e87503fb.PNG)
+
+![faq](https://user-images.githubusercontent.com/84882370/162036379-622f8c58-93ca-4d7f-a221-fbe5dccff856.PNG)
+
+![contact](https://user-images.githubusercontent.com/84882370/162036435-7b0a9cc6-bc8d-48ab-b15e-55dcf02b1357.PNG)
 
