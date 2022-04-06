@@ -17,7 +17,7 @@ The tools I used are:
 | Bootstrap, Vanilla CSS and Angular material|Styling|
 |Git and GitHub|Version control|
 
-##URL
+## URL
 
 <!--<a href="https://bl-aire.github.io/blaires.crafts/homepage" target="_blank">https://bl-aire.github.io/blaires.crafts/homepage<a/>-->
 
