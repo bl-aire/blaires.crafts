@@ -19,7 +19,7 @@ The tools I used are:
 
 ##URL
 
-<a href="https://bl-aire.github.io/blaires.crafts/homepage" target="_blank">https://bl-aire.github.io/blaires.crafts/homepage<a/>
+<!--<a href="https://bl-aire.github.io/blaires.crafts/homepage" target="_blank">https://bl-aire.github.io/blaires.crafts/homepage<a/>-->
 
 ## User Interface
 
