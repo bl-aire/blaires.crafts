@@ -1,5 +1,5 @@
 .homepage-container{
-    background: url('/assets/pastel_floral.jpg') no-repeat center center fixed;
+    background: url('/data/assets/pastel_floral.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 80vh;
     display: flex;
