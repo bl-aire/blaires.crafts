@@ -14,16 +14,16 @@
             <div class="form-group mb-3">
                 <label for="name">Name</label>
                 <input id="name" class="form-control" type="text" required name="name" formControlName="name">
-                <div>
-                    <small></small>
+                <div *ngIf="FormData.controls['name'].invalid && FormData.controls['name'].touched">
+                    <small>Name is required</small>
                 </div>
             </div>
 
             <div class="form-group mb-3">
                 <label for="name">Email</label>
                 <input id="email" class="form-control" type="text" required name="email" formControlName="email">
-                <div>
-                    <small></small>
+                <div *ngIf="FormData.controls['email'].invalid && FormData.controls['email'].touched">
+                    <small>Email is required</small>
                 </div>
             </div>
 
@@ -41,8 +41,8 @@
                     <option>Yes</option>
                     <option>No</option>
                 </select>
-                <div>
-                    <small></small>
+                <div *ngIf="FormData.controls['orderType'].invalid && FormData.controls['orderType'].touched">
+                    <small>Information is required</small>
                 </div>
             </div>
 
