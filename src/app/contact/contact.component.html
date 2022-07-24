@@ -1,7 +1,7 @@
 <div class="container">
     <h2 class="mb-3">Contact</h2>
     
-    <form action="" class="row">
+    <form action="" class="row" #form="ngForm" [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
 
         <div class="form-image col-md-6">
             <img src="data/assets/contact-us.png" alt="" class="img-fluid">
@@ -13,28 +13,48 @@
             
             <div class="form-group mb-3">
                 <label for="name">Name</label>
-                <input id="name" class="form-control">
+                <input id="name" class="form-control" type="text" required name="name" formControlName="name">
+                <div>
+                    <small></small>
+                </div>
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="name">Email</label>
+                <input id="email" class="form-control" type="text" required name="email" formControlName="email">
+                <div>
+                    <small></small>
+                </div>
             </div>
 
             <div class="form-group mb-3">
                 <label for="location">Location</label>
-                <input id="location" class="form-control">
+                <input id="location" class="form-control" type="text" required name="location" formControlName="location">
+                <div>
+                    <small></small>
+                </div>
             </div>
 
             <div class="form-group mb-3">
-                <label for="subscriptionType" class="mb-3">Are you making a custom order?</label>
-                <select class="form-control" id="subscriptionType">
+                <label for="orderType" class="mb-3">Are you making a custom order?</label>
+                <select class="form-control" id="orderType" required name="orderType" formControlName="orderType">
                     <option>Yes</option>
                     <option>No</option>
                 </select>
+                <div>
+                    <small></small>
+                </div>
             </div>
 
             <div class="form-group mb-3">
                 <label for="theme">If yes, what theme do you have in mind?</label>
-                <input id="theme" class="form-control">
+                <input id="theme" class="form-control" required name="theme" formControlName="theme">
+                <div>
+                    <small></small>
+                </div>
             </div>
 
-            <button class="btn btn-primary">Send</button>
+            <button class="btn btn-primary" type="submit">Send</button>
         </div>
     </form>
 </div>
