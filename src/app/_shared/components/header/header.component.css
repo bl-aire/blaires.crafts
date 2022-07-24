@@ -3,7 +3,7 @@
  }
 
 .mat-toolbar.mat-primary {
-  background: #fff;
+  background: rgb(255, 255, 255);
   color :#000;
   position:relative;
   height: 10vh;
