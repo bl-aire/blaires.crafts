@@ -42,10 +42,9 @@ h2 {
 .card {
   border-radius: 1em;
   display: flex;
-  flex-direction: column;
   width:300px;
   height: 250px;
-  margin:2em 3em;
+  margin:2em auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
