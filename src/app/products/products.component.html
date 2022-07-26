@@ -6,27 +6,27 @@
   </mat-form-field>
 
 
-  <mat-drawer-container class="m-container" autosize>
-    <mat-drawer #drawer class="m-side-nav category" mode="side">
+  <div class="m-container">
+    <!--<mat-drawer #drawer class="m-side-nav category" mode="side">
       <ul>
         <li><a href="#accessories">Accessories</a></li>
         <li><a href="#gift-boxes">Gift Boxes</a></li>
         <li><a href="#mugs">Mugs</a></li>
         <li><a href="#stationaries">Stationaries</a></li>
       </ul>
-      <!--<p *ngIf=showFiller>Coming soon!</p>
+      <p *ngIf=showFiller>Coming soon!</p>
       <button (click)="showFiller = !showFiller" mat-raised-button>
         Promo available
-      </button>-->
+      </button>
     </mat-drawer>
 
     <div class="m-sidenav-content">
       <button type="button" mat-button (click)="drawer.toggle()" class="category">
         View Product Categories
       </button>
-    </div>
+    </div>-->
 
-    <div fxLayout="row wrap" fxLayout.md="column" fxLayoutWrap="wrap" fxLayoutGap="32px" fxLayoutAlign="center" class="div">
+    <!--<div fxLayout="row wrap" fxLayout.md="column" fxLayoutWrap="wrap" fxLayoutGap="32px" fxLayoutAlign="center" class="div">
       <mat-card class="m-card" *ngFor="let product of filteredProducts" class="catalog" fxFlex="25" fxFlex.lt-md="60"
         fxFlex.xs="60">
 
@@ -42,6 +42,18 @@
           <i class="fa fa-shopping-cart cart"></i>
         </div>
       </mat-card>
+    </div>-->
+    <div class="card catalog" *ngFor="let product of filteredProducts">
+      <img [src]="product.imageUrl" alt="item" height="189px">
+      <div class="card-container">
+        <div class="product-details">
+          <div class="name">{{ product.productName }}</div>
+          <div class="price"><b>{{ product.price | currency:'USD':'symbol':'1.2-2' }}</b></div>
+        </div>
+        <div class="button">
+          <button>+</button>
+        </div>
+      </div>
     </div>
-  </mat-drawer-container>
+  </div>
 </div>
