@@ -1,4 +1,4 @@
-<div class="container">
+<div class="product-container">
   <h2>{{ pageTitle }}</h2>
 
   <mat-form-field class="search-form">
@@ -6,43 +6,8 @@
   </mat-form-field>
 
 
-  <div class="m-container">
-    <!--<mat-drawer #drawer class="m-side-nav category" mode="side">
-      <ul>
-        <li><a href="#accessories">Accessories</a></li>
-        <li><a href="#gift-boxes">Gift Boxes</a></li>
-        <li><a href="#mugs">Mugs</a></li>
-        <li><a href="#stationaries">Stationaries</a></li>
-      </ul>
-      <p *ngIf=showFiller>Coming soon!</p>
-      <button (click)="showFiller = !showFiller" mat-raised-button>
-        Promo available
-      </button>
-    </mat-drawer>
-
-    <div class="m-sidenav-content">
-      <button type="button" mat-button (click)="drawer.toggle()" class="category">
-        View Product Categories
-      </button>
-    </div>-->
-
-    <!--<div fxLayout="row wrap" fxLayout.md="column" fxLayoutWrap="wrap" fxLayoutGap="32px" fxLayoutAlign="center" class="div">
-      <mat-card class="m-card" *ngFor="let product of filteredProducts" class="catalog" fxFlex="25" fxFlex.lt-md="60"
-        fxFlex.xs="60">
-
-        <mat-card-header fxLayout.gt-xs="row" fxLayout.xs="column">
-          <mat-card-title>{{ product.productName }}</mat-card-title>
-          <mat-card-subtitle>{{ product.description }}</mat-card-subtitle>
-        </mat-card-header>
-
-        <img [src]='product.imageUrl' alt="" width="200px">
+  <div class="m-container container">
     
-        <div class ="mat-card-actions">
-          <b class="price">{{ product.price | currency:'USD':'symbol':'1.2-2' }}</b>
-          <i class="fa fa-shopping-cart cart"></i>
-        </div>
-      </mat-card>
-    </div>-->
     <div class="card catalog" *ngFor="let product of filteredProducts">
       <img [src]="product.imageUrl" alt="item" height="189px">
       <div class="card-container">
@@ -55,5 +20,6 @@
         </div>
       </div>
     </div>
+    
   </div>
 </div>

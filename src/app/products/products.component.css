@@ -1,4 +1,4 @@
-.container {
+.product-container {
   padding: 2em 2em;
   min-height: 100%;
   width: 100%;
@@ -9,7 +9,7 @@
 
 .img {
   width: 100%;
-  margin-bottom: 18%;
+  /*margin-bottom: 18%;*/
 }
 
 h2 {
@@ -42,23 +42,20 @@ h2 {
 .card {
   border-radius: 1em;
   display: flex;
-  width:300px;
-  height: 340px;
+  width:18.75em;
+  height: 21.25em;
   margin:2em auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .product-details {
-  padding: 0.7em 0 0.7em 1em;
+  margin: auto 0 auto 1em;
 }
 
-.card-container {
-  margin-top: 5%;
-}
 
 img {
   border-radius: 0.7em 0.7em 0 0;
-  height:85%;
+  height:80%;
 }
 
 button {
@@ -66,8 +63,8 @@ button {
   background-color: rgb(236, 119, 139);
   border-radius:0.7em 0;
   color: white;
-  font-size: 1.4em;
-  padding:1em;
+  font-size: 1.2em;
+  padding:1.2em;
 }
 
 button:hover {
