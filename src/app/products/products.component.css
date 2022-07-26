@@ -17,13 +17,23 @@ h2 {
   font-size: 3em;
 }
 
-.search-form {
+.div {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
+}
+
+.search-form {
+  width: 90%;
+}
+
+.fa-shopping-basket {
+  margin: auto;
+  font-size: 1.3em; /*increase for mobile view*/
 }
 
 .input {
   padding: 0.5em;
-  width: 100%;
 }
 
 .m-container{

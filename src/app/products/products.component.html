@@ -1,10 +1,12 @@
 <div class="product-container">
   <h2>{{ pageTitle }}</h2>
 
+  <div class="div">
   <mat-form-field class="search-form">
     <input matInput placeholder="Search Items" class="input" type="search" [(ngModel)] = listFilter>
   </mat-form-field>
-
+  <mat-icon class="fa fa-shopping-basket" matBadge="0" matBadgeColor="warn" mat-raised-button matBadgeSize="small"></mat-icon>
+  </div>
 
   <div class="m-container container">
     
