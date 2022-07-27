@@ -73,6 +73,10 @@ img {
   background-color: #ffffff;
 }
 
+.checkout:hover {
+  transform: translate(0.1em, 0.1em);
+}
+
 button:not(.checkout) {
   border: 0;
   background-color: rgb(236, 119, 139);

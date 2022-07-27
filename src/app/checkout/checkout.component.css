@@ -1,0 +1,28 @@
+.checkout-container {
+    padding: 2em 4em;
+}
+
+h2 {
+    font-family:'Comforter Brush', cursive;
+    font-size: 3em;
+}
+
+.checkout-container .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.image {
+    width: 30%;
+}
+
+.counter, .details {
+    margin: auto 0;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+}
