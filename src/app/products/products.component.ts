@@ -16,6 +16,7 @@ export class ProductsComponent implements OnInit, OnDestroy{
   //showImage: boolean = false;
   errorMessage: string = '';
   sub: Subscription | any;
+  badgeNumber: number;
 
 
   showFiller = false;
@@ -33,7 +34,9 @@ export class ProductsComponent implements OnInit, OnDestroy{
   filteredProducts: IProduct[] = [];
   products: IProduct[] = [];
 
-  constructor(private productService: ProductService) { }
+  constructor(private productService: ProductService) {
+    this.badgeNumber = 0; 
+  }
 
   performFilter(filterBy: string):IProduct[]{
     filterBy = filterBy.toLocaleLowerCase(); //so its not case sensitive
@@ -42,6 +45,7 @@ export class ProductsComponent implements OnInit, OnDestroy{
   }
 
   ngOnInit(): void {
+
     this.sub = this.productService.getProducts().subscribe({
       next: products => {
         this.products = products; //shows in the same order it is in the products.json
@@ -58,6 +62,10 @@ export class ProductsComponent implements OnInit, OnDestroy{
 
   onRatingClicked(message: string): void {
     this.pageTitle = 'Product List: ' + message;
+  }
+
+  increaseCounter() {
+    this.badgeNumber++;
   }
 
 }

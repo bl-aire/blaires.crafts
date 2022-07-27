@@ -5,7 +5,7 @@
   <mat-form-field class="search-form">
     <input matInput placeholder="Search Items" class="input" type="search" [(ngModel)] = listFilter>
   </mat-form-field>
-  <mat-icon class="fa fa-shopping-basket" matBadge="0" matBadgeColor="warn" mat-raised-button matBadgeSize="small"></mat-icon>
+  <mat-icon class="fa fa-shopping-basket" [matBadge]="badgeNumber" matBadgeColor="warn" mat-raised-button matBadgeSize="small"></mat-icon>
   </div>
 
   <div class="m-container container">
@@ -18,7 +18,7 @@
           <div class="price"><b>{{ product.price | currency:'USD':'symbol':'1.2-2' }}</b></div>
         </div>
         <div class="button">
-          <button>+</button>
+          <button (click)="increaseCounter()">+</button>
         </div>
       </div>
     </div>
