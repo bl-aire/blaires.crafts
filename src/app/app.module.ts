@@ -25,6 +25,7 @@ import { FrequentlyAskedQuestionsComponent } from './frequently-asked-questions/
 import { HeaderComponent } from './_shared/components/header/header.component';
 import { FooterComponent } from './_shared/components/footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 
@@ -39,6 +40,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FrequentlyAskedQuestionsComponent,
     HeaderComponent,
     FooterComponent,
+    CheckoutComponent,
   ],
   imports: [
     BrowserModule,

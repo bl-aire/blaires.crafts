@@ -5,7 +5,9 @@
   <mat-form-field class="search-form">
     <input matInput placeholder="Search Items" class="input" type="search" [(ngModel)] = listFilter>
   </mat-form-field>
-  <mat-icon class="fa fa-shopping-basket" [matBadge]="badgeNumber" matBadgeColor="warn" mat-raised-button matBadgeSize="small"></mat-icon>
+  <button routerLink="/checkout" routerLinkActive="active" class="checkout">
+    <mat-icon class="fa fa-shopping-basket" [matBadge]="badgeNumber" matBadgeColor="warn" mat-raised-button matBadgeSize="small"></mat-icon>
+  </button>
   </div>
 
   <div class="m-container container">
@@ -25,3 +27,5 @@
     
   </div>
 </div>
+
+<router-outlet></router-outlet>
