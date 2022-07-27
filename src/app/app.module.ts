@@ -26,6 +26,7 @@ import { HeaderComponent } from './_shared/components/header/header.component';
 import { FooterComponent } from './_shared/components/footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { FlutterwaveModule } from 'flutterwave-angular-v3';
 
 
 
@@ -58,7 +59,8 @@ import { CheckoutComponent } from './checkout/checkout.component';
     FlexLayoutModule,
     FormsModule,
     ReactiveFormsModule,
-    MatBadgeModule
+    MatBadgeModule,
+    FlutterwaveModule
   ],
   providers: [],
   bootstrap: [AppComponent]
