@@ -8,9 +8,9 @@ import {Flutterwave, InlinePaymentOptions, PaymentSuccessResponse} from "flutter
 })
 export class CheckoutComponent implements OnInit {
 
+  orderCounter: number ;
+
   publicKey = "FLWPUBK_TEST-08976f7d01df473244698700d4cd64e7-X";
- 
-  amount = 0;
 
   customerDetails = { name: 'Demo Customer  Name', email: 'customer@mail.com', phone_number: '08100000000'}
  
@@ -18,22 +18,50 @@ export class CheckoutComponent implements OnInit {
  
   meta = {'counsumer_id': '7898', 'consumer_mac': 'kjs9s8ss7dd'}
 
-  constructor(private flutterwave: Flutterwave) { }
+  paymentData: InlinePaymentOptions = {
+    public_key: this.publicKey,
+    tx_ref: this.generateReference(),
+    amount: 10,
+    currency: 'NGN',
+    payment_options: 'card,ussd',
+    redirect_url: '',
+    meta: this.meta,
+    customer: this.customerDetails,
+    customizations: this.customizations,
+    callback: this.makePaymentCallback,
+    onclose: this.closedPaymentModal,
+    callbackContext: this
+  }
+
+  constructor(private flutterwave: Flutterwave) { 
+    this.orderCounter = 0; 
+  }
 
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
 
+  makePayment(){
+    this.flutterwave.inlinePay(this.paymentData)
+  }
   makePaymentCallback(response: PaymentSuccessResponse): void {
-    console.log("Pay", response);
-    this.flutterwave.closePaymentModal(5)
+    console.log("Payment callback", response);
   }
   closedPaymentModal(): void {
     console.log('payment is closed');
   }
-  generateReference(): string {
-    let date = new Date();
+  generateReference(){
+    let date = new Date()
     return date.getTime().toString();
   }
+
+  increaseOrderCounter() {
+    this.orderCounter += 1;
+  }
+
+  decreaseOrderCounter() {
+    this.orderCounter -= 1;
+  }
+
 }
 

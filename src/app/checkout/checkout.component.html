@@ -9,16 +9,21 @@
             <div>description</div>
             <div>price</div>
         </div>
-        <div class="counter">counter</div>
+        <div class="counter" [innerHTML]="orderCounter"></div>
         <div class="buttons">
-            <button>+</button>
-            <button>-</button>
+            <button (click)="increaseOrderCounter()">+</button>
+            <button (click)="decreaseOrderCounter()">-</button>
         </div>
     </div>
-    <div>
-        <flutterwave-make-payment [public_key]="publicKey" [amount]='amount' currency='USD' payment_options="card"
+    <div class="order-total">
+        <div class="total">
+            <span class="description">Total Amount</span>
+            <span class="sum-total">$20</span>
+        </div>
+        <!--<flutterwave-make-payment [public_key]="publicKey" [amount]='amount' currency='USD' payment_options="card"
             redirect_url="" text="Place order" [customer]="customerDetails" [customizations]="customizations" [meta]="meta"
             [tx_ref]="generateReference()" (callback)="makePaymentCallback($event)" (close)="closedPaymentModal()">
-        </flutterwave-make-payment>
+        </flutterwave-make-payment>-->
+        <button (click)="makePayment()" class="orderButton">Place order</button>
     </div>
 </div>

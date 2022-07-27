@@ -2,9 +2,17 @@
     padding: 2em 3em;
 }
 
+.card {
+    padding: 1.3em;
+    border: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.9em;
+}
+
 h2 {
     font-family:'Comforter Brush', cursive;
     font-size: 3em;
+    margin: 0 0 1em 0;
 }
 
 .checkout-container .card {
@@ -25,4 +33,49 @@ h2 {
     display: flex;
     flex-direction: column;
     margin: auto 0;
+}
+
+.buttons button {
+    border: 0;
+    margin: 0.5em;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    margin:2em 0 0 0;
+}
+
+.total {
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    color: #6e6e6e;
+}
+
+.counter {
+    font-size: 1.7em;
+}
+
+.sum-total {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.orderButton {
+    border: 0;
+    font-size: 1.085em;
+    padding: 0.8em;
+    border-radius: 0.9em;
+    background-color: rgb(243, 123, 143);
+    color: #ffffff;
+}
+
+.orderButton:hover{
+    background-color:rgba(243, 123, 143, 0.7) ;
 }
