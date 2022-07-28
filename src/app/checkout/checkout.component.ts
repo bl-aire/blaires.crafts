@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import {Flutterwave, InlinePaymentOptions, PaymentSuccessResponse} from "flutterwave-angular-v3"
+import { CartService } from '../_shared/services/cart.service';
 
 @Component({
   selector: 'app-checkout',
@@ -33,7 +34,10 @@ export class CheckoutComponent implements OnInit {
     callbackContext: this
   }
 
-  constructor(private flutterwave: Flutterwave) { 
+  items = this.cartService.getItems();
+
+
+  constructor(private flutterwave: Flutterwave, private cartService: CartService) { 
     this.orderCounter = 0; 
   }
 

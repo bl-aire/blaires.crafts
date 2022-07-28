@@ -1,7 +1,8 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Subscription } from "rxjs";
 import { IProduct } from "./product";
 import { ProductService } from "./product.service";
+import { CartService } from '../_shared/services/cart.service';
 
 @Component({
   selector: 'app-products',
@@ -10,6 +11,10 @@ import { ProductService } from "./product.service";
 })
 
 export class ProductsComponent implements OnInit, OnDestroy{
+
+  @Output() productAdded = new EventEmitter();
+
+  clickState: number = 0;
   pageTitle: string = 'Product List';
   imageWidth: number = 200;
   imageMargin: number = 20;
@@ -34,7 +39,7 @@ export class ProductsComponent implements OnInit, OnDestroy{
   filteredProducts: IProduct[] = [];
   products: IProduct[] = [];
 
-  constructor(private productService: ProductService) {
+  constructor(private productService: ProductService, private cartService: CartService ) {
     this.badgeNumber = 0; 
   }
 
@@ -64,8 +69,35 @@ export class ProductsComponent implements OnInit, OnDestroy{
     this.pageTitle = 'Product List: ' + message;
   }
 
-  increaseCounter() {
+ 
+
+  checkout(product: IProduct) {
+
+    this.clickState++;
+
+    if(this.clickState == 1){
+      this.badgeNumber++;
+      this.cartService.addToCart(product);
+      window.alert('Your product has been added to the cart!');
+    } else if (this.clickState == 2){
+      this.clickState=0;
+    }
+
+  }
+
+  /*increaseCounter() {
     this.badgeNumber++;
   }
 
+  addToCart(product: IProduct){
+    this.cartService.addToCart(product);
+    window.alert('Your product has been added to the cart!');
+  }*/
+
 }
+
+
+function product(product: any, IProduct: any) {
+  throw new Error('Function not implemented.');
+}
+

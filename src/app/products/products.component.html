@@ -19,8 +19,8 @@
           <div class="name">{{ product.productName }}</div>
           <div class="price"><b>{{ product.price | currency:'USD':'symbol':'1.2-2' }}</b></div>
         </div>
-        <div class="button">
-          <button (click)="increaseCounter()">+</button>
+        <div class="button" *ngIf="product">
+          <button (click)="checkout(product)">+</button>
         </div>
       </div>
     </div>

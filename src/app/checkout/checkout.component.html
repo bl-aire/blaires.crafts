@@ -1,18 +1,18 @@
 <div class="checkout-container">
     <h2>My Cart</h2>
-    <div class="card">
+    <div class="card" *ngFor="let item of items">
         <div class="image">
-            <span>image</span>
+            <img [src]="item.imageUrl" alt="product-image" height="80px">
         </div>
         <div class="details">
-            <div>name</div>
-            <div>description</div>
-            <div>price</div>
+            <div>{{ item.productName }}</div>
+            <!--<div>{{ item.description }}</div>-->
+            <div>{{ item.price | currency:'USD':'symbol':'1.2-2'}}</div>
         </div>
         <div class="counter" [innerHTML]="orderCounter"></div>
         <div class="buttons">
-            <button (click)="increaseOrderCounter()">+</button>
-            <button (click)="decreaseOrderCounter()">-</button>
+            <button (click)="increaseOrderCounter()" class="button1">+</button>
+            <button (click)="decreaseOrderCounter()" class="button2">-</button>
         </div>
     </div>
     <div class="order-total">
@@ -20,10 +20,6 @@
             <span class="description">Total Amount</span>
             <span class="sum-total">$20</span>
         </div>
-        <!--<flutterwave-make-payment [public_key]="publicKey" [amount]='amount' currency='USD' payment_options="card"
-            redirect_url="" text="Place order" [customer]="customerDetails" [customizations]="customizations" [meta]="meta"
-            [tx_ref]="generateReference()" (callback)="makePaymentCallback($event)" (close)="closedPaymentModal()">
-        </flutterwave-make-payment>-->
         <button (click)="makePayment()" class="orderButton">Place order</button>
     </div>
 </div>
