@@ -6,4 +6,5 @@ export interface IProduct {
     description: string;
     imageUrl: string;
     accessories:any;
+    num: number;
 }

@@ -24,7 +24,7 @@ h2 {
     margin:0 0 1em 0;
 }
 
-.counter, .details, .image {
+.details, .image, .delete {
     margin: auto 0;
 }
 
@@ -32,7 +32,7 @@ h2 {
     border-radius: 0.5em;
 }
 
-.buttons {
+/*.buttons {
     display: flex;
     flex-direction: column;
 }
@@ -40,8 +40,8 @@ h2 {
 .buttons button {
     border: 0;
     background-color: #ffffff;
-    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 50%;*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
     padding: 0.3em;
     margin:auto 0;
 }
@@ -52,6 +52,10 @@ h2 {
 
 button2 {
     margin-top: 0.4em;
+}*/
+input {
+    margin:auto 0.2em;
+    width: 100px;
 }
 
 .order-total {
@@ -69,9 +73,9 @@ button2 {
     color: #6e6e6e;
 }
 
-.counter {
+/*.counter {
     font-size: 1.7em;
-}
+}*/
 
 .sum-total {
     font-size: 1.3em;

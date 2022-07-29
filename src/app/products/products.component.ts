@@ -12,8 +12,6 @@ import { CartService } from '../_shared/services/cart.service';
 
 export class ProductsComponent implements OnInit, OnDestroy{
 
-  @Output() productAdded = new EventEmitter();
-
   clickState: number = 0;
   pageTitle: string = 'Product List';
   imageWidth: number = 200;
@@ -59,6 +57,7 @@ export class ProductsComponent implements OnInit, OnDestroy{
       error: err => this.errorMessage = err
     });
     //this.listFilter = 'cart';
+
   }
 
   ngOnDestroy(){
@@ -72,19 +71,10 @@ export class ProductsComponent implements OnInit, OnDestroy{
  
 
   checkout(product: IProduct) {
-
-    this.clickState++;
-
-    if(this.clickState == 1){
-      this.badgeNumber++;
-      this.cartService.addToCart(product);
-      window.alert('Your product has been added to the cart!');
-    } else if (this.clickState == 2){
-      this.clickState=0;
-    }
-
+    this.cartService.addItem(product)
+    this.badgeNumber++
   }
-
+     
   /*increaseCounter() {
     this.badgeNumber++;
   }

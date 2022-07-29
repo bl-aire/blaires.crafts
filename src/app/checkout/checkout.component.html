@@ -7,18 +7,16 @@
         <div class="details">
             <div>{{ item.productName }}</div>
             <!--<div>{{ item.description }}</div>-->
-            <div>{{ item.price | currency:'USD':'symbol':'1.2-2'}}</div>
+            <div>{{ item.price | currency:'USD':'symbol':'1.2-2' }}</div>
         </div>
-        <div class="counter" [innerHTML]="orderCounter"></div>
-        <div class="buttons">
-            <button (click)="increaseOrderCounter()" class="button1">+</button>
-            <button (click)="decreaseOrderCounter()" class="button2">-</button>
-        </div>
+        <!--<div class="counter" [innerHTML]="orderCounter"></div>-->
+        <input type="number" [(ngModel)]="item.num" min="0" class="input"/>
+        <mat-icon class="delete"><i class="fa fa-trash" (click)="clearCart()"></i></mat-icon>
     </div>
     <div class="order-total">
         <div class="total">
             <span class="description">Total Amount</span>
-            <span class="sum-total">$20</span>
+            <span class="sum-total">{{total()}}</span>
         </div>
         <button (click)="makePayment()" class="orderButton">Place order</button>
     </div>

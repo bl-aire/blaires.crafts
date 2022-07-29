@@ -1,6 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import {Flutterwave, InlinePaymentOptions, PaymentSuccessResponse} from "flutterwave-angular-v3"
 import { CartService } from '../_shared/services/cart.service';
+import { IProduct } from '../products/product';
+import { ProductsComponent } from '../products/products.component';
 
 @Component({
   selector: 'app-checkout',
@@ -8,6 +10,8 @@ import { CartService } from '../_shared/services/cart.service';
   styleUrls: ['./checkout.component.css']
 })
 export class CheckoutComponent implements OnInit {
+
+  //@Input() product!: IProduct[];
 
   orderCounter: number ;
 
@@ -34,15 +38,14 @@ export class CheckoutComponent implements OnInit {
     callbackContext: this
   }
 
-  items = this.cartService.getItems();
-
+  items: IProduct[] = [];
 
   constructor(private flutterwave: Flutterwave, private cartService: CartService) { 
     this.orderCounter = 0; 
   }
 
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
+  ngOnInit() {
+    this.items = this.cartService.getCartItems();
   }
 
   makePayment(){
@@ -59,6 +62,14 @@ export class CheckoutComponent implements OnInit {
     return date.getTime().toString();
   }
 
+  clearCart() {
+    this.cartService.clearCart()
+  }
+
+  total(){
+    this.cartService.total();
+  }
+ 
   increaseOrderCounter() {
     this.orderCounter += 1;
   }

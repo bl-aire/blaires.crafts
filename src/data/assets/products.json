@@ -1,7 +1,7 @@
 [
   {
     "productId": 12,
-    "productName": "Miniature Snacks",
+    "productName": "Miniature Snack",
     "description": "Handmade Miniature Snacks",
     "price": 20.00,
     "imageUrl": "/data/assets/burger.jpeg"
