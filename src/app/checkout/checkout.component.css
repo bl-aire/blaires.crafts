@@ -31,13 +31,12 @@ h3 {
     margin:0 0 1em 0;
 }
 
-.details, .image, .delete {
+.details, .delete, .image {
     margin: auto 0;
 }
 
 .delete{
     font-size: smaller;
-    margin-left: 3em;
 }
 
 .image img {
