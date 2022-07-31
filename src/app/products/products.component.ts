@@ -68,8 +68,6 @@ export class ProductsComponent implements OnInit, OnDestroy{
     this.pageTitle = 'Product List: ' + message;
   }
 
- 
-
   checkout(product: IProduct) {
     this.cartService.addItem(product)
     this.badgeNumber++

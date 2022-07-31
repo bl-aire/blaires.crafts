@@ -1,5 +1,6 @@
 .checkout-container {
     padding: 2em 3em;
+    margin: 0 0 4em 0;
 }
 
 .card {
@@ -13,6 +14,12 @@ h2 {
     font-family:'Comforter Brush', cursive;
     font-size: 3em;
     margin: 0 0 1em 0;
+}
+
+h3 {
+    font-family:'Comforter Brush', cursive;
+    font-size: 2em;
+    margin: 2em 0 1em 0;
 }
 
 .checkout-container .card {
@@ -53,20 +60,27 @@ h2 {
 button2 {
     margin-top: 0.4em;
 }*/
-input {
+
+.checkoutForm form input{
+    width: 100%;
+}
+
+.checkoutForm form div{
+    margin: 0 0 1.5em 0;
+}
+
+.input {
     margin:auto 0.2em;
-    width: 100px;
+    width: 50px;
 }
 
 .order-total {
-    display: flex;
-    justify-content: space-between;
     margin:2em 0 0 0;
 }
 
 .total {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }
 
 .description {
@@ -93,4 +107,18 @@ input {
 
 .orderButton:hover{
     background-color:rgba(243, 123, 143, 0.7) ;
+}
+
+@media only screen and (min-width: 992px) {
+    .checkout-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .checkoutForm, .cardContainer{
+        margin: auto;
+        padding: 0 0 0 9em;
+        width: 50%;
+    }
+
 }

@@ -8,6 +8,7 @@ import { ProductsComponent } from 'src/app/products/products.component';
 export class CartService {
 
   items:IProduct[] = [];
+  product: any;
 
   constructor() {}
 
@@ -28,6 +29,10 @@ export class CartService {
       
   }
 
+  removeItem(product: any) {
+    this.items.splice(this.items.indexOf(this.product), 1);
+    this.items = [...this.items]
+  }
   /*getItems() {
     return this.items;
   }
