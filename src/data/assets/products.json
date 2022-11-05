@@ -13,7 +13,7 @@
     "description": "Handmade Miniature Snacks",
     "price": 20.00,
     "imageUrl": "/data/assets/icecream-donut.jpeg",
-    "alt": "iniature Snacks"
+    "alt": "Miniature Snacks"
   },
   {
     "productId": 11,
@@ -29,7 +29,7 @@
     "description": "Handmade Rose Mug",
     "price": 20.00,
     "imageUrl": "/data/assets/roses.jpeg",
-    "alt": "Rose Mug"
+    "alt": "Rose MUG"
   },
   {
     "productId": 2,
@@ -94,6 +94,6 @@
     "description": "Handmade Spongebob Mug",
     "price": 20.00,
     "imageUrl": "/data/assets/bob.jpeg",
-    "alt": "Spongebob Mug"
+    "alt": "Bob Mug"
   }
 ]

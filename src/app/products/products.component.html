@@ -13,7 +13,7 @@
   <div class="m-container container">
     
     <div class="card catalog" *ngFor="let product of filteredProducts">
-      <img [src]="product.imageUrl" alt="item" height="189px">
+      <img [src]="product.imageUrl" [alt]="product.alt" height="189px">
       <div class="card-container">
         <div class="product-details">
           <div class="name">{{ product.productName }}</div>
