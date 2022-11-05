@@ -1,11 +1,11 @@
 [
   {
     "productId": 12,
-    "productName": "Miniature Snack",
+    "productName": "Mini Food",
     "description": "Handmade Miniature Snacks",
     "price": 20.00,
     "imageUrl": "/data/assets/burger.jpeg",
-    "alt": "Miniature Snack"
+    "alt": "Mini Food"
   },
   {
     "productId": 13,
@@ -25,11 +25,11 @@
   },
   {
     "productId": 1,
-    "productName": "Rose Mug",
+    "productName": "Petals Mug",
     "description": "Handmade Rose Mug",
     "price": 20.00,
     "imageUrl": "/data/assets/roses.jpeg",
-    "alt": "Rose MUG"
+    "alt": "Petals Mug"
   },
   {
     "productId": 2,
@@ -90,7 +90,7 @@
   },
   {
     "productId": 10,
-    "productName": "Spongebob Mug",
+    "productName": "Bob Mug",
     "description": "Handmade Spongebob Mug",
     "price": 20.00,
     "imageUrl": "/data/assets/bob.jpeg",
